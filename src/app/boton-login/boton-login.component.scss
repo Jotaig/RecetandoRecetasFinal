@@ -1,0 +1,15 @@
+.ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupa la altura total de la pantalla */
+    width: 100%; /* Ocupa el ancho total */
+}
+  
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el div interno también tenga altura completa */
+}

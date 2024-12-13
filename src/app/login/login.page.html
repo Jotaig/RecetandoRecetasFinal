@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingresar Receta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card><br><br>
+    <ion-title>Guarda tu Receta</ion-title><br>
+    <ion-card-header>
+        <ion-item>
+          <ion-textarea label="" placeholder="Escribe tu Receta" [(ngModel)]="receta"></ion-textarea>
+          <ion-button [disabled]="!receta" (click)="addReceta()">
+            <ion-icon name="add-outline"></ion-icon>
+           </ion-button>
+        </ion-item>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+        <ion-img [src]="photo.webviewPath"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- ion-fab markup  -->
+</ion-content>
+
+
+<script
+  type="module"
+  src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+></script>

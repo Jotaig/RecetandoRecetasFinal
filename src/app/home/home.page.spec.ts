@@ -21,4 +21,9 @@ describe('HomePage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(' Card deberia contener categorias del mes', () => {
+    const card = HomePage.card;
+    expect(card).toEqual('Home Page')
+  });
 });

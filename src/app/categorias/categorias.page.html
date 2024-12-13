@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Categorias de Comidas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    @for (comida of comidas; track comida.id){
+    <img alt="" src="{{ comida.strCategoryThumb }}" />
+    <ion-card-header>
+      <ion-card-title>{{ comida.strCategory }}</ion-card-title>
+      <ion-card-subtitle>{{ comida.idCategory }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ comida.strCategoryDescription }}
+    </ion-card-content>}
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Busca tu receta :)</ion-title>
+  </ion-toolbar>
+</ion-footer>

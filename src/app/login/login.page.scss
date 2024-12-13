@@ -1,0 +1,10 @@
+.ion-button {
+    --background: purple;        /* Color de fondo del botón */
+    --border-radius: 50%;        /* Hace el botón completamente circular */
+    --height: 100px;             /* Altura del botón */
+    --width: 100px;              /* Ancho del botón, mismo que la altura para hacerlo circular */
+    font-size: 20px;             /* Tamaño de la fuente más grande */
+    display: block;              /* Para que el botón sea un bloque y pueda centrarse */
+    margin: 0 auto;              /* Centrar el botón horizontalmente */
+    line-height: 100px;          /* Centrar el texto verticalmente en el botón */
+  }
